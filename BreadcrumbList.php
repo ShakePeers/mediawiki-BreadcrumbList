@@ -37,7 +37,7 @@ function breadcrumbList(&$out)
         $html .= 'itemref="bread_title"';
     }
     $html .= ' itemtype="http://data-vocabulary.org/Breadcrumb">
-        <a itemprop="url" href="'.$wgScriptPath.'">
+        <a itemprop="url" href="'.$wgScriptPath.'/">
             <span itemprop="title">'.$wgSitename.'</span></a>
         </li>';
     if (isset($NsTitle)) {
