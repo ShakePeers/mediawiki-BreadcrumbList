@@ -1,0 +1,9 @@
+.mw-content-ltr .breadcrumb_list,
+.breadcrumb_list {
+    list-style-type:none;
+    margin-left:0;
+}
+
+.breadcrumb_list li {
+    display:inline;
+}
