@@ -38,7 +38,10 @@ function breadcrumbList(&$out)
     }
     $html .= ' itemtype="http://data-vocabulary.org/Breadcrumb">
         <a itemprop="url" href="'.$wgScriptPath.'/">
-            <span itemprop="title">'.$wgSitename.'</span></a>
+            <span class="glyphicon glyphicon-home" aria-hidden="true"
+                title="'.$wgSitename.'"></span>
+            <span itemprop="title" class="sr-only">'.$wgSitename.'</span>
+        </a>
         </li>';
     if (isset($NsTitle)) {
         $html .= ' › <li id="bread_ns" itemscope
