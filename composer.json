@@ -1,0 +1,6 @@
+{
+	"name": "shakeepers/mediawiki-breadcrumblist",
+	"description": "Breadcrumbs with microdata",
+	"license": "GPL-3.0",
+	"type": "mediawiki-extension"
+}
