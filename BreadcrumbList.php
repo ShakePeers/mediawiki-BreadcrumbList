@@ -1,27 +1,28 @@
 <?php
 /**
  * BreadcrumbList
- * Breadcrumbs with microdata
+ * Breadcrumbs with microdata.
  *
  * PHP version 5.4
  *
  * @category Extension
- * @package  BreadcrumbList
+ *
  * @author   Pierre Rudloff <contact@rudloff.pro>
  * @license  GPL http://www.gnu.org/licenses/gpl.html
+ *
  * @link     https://github.com/ShakePeers/mediawiki-BreadcrumbList
  * */
-$wgExtensionCredits['validextensionclass'][] = array(
-   'name' => 'BreadcrumbList',
-   'author' =>'ShakePeers', 
-   'url' => 'http://shakepeers.org/'
-);
+$wgExtensionCredits['validextensionclass'][] = [
+   'name'   => 'BreadcrumbList',
+   'author' => 'ShakePeers',
+   'url'    => 'http://shakepeers.org/',
+];
 
 /**
- * Display breadcrumbs
+ * Display breadcrumbs.
  *
  * @param OutputPage $out HTML page
- * 
+ *
  * @return void
  * */
 function breadcrumbList(&$out)
@@ -72,4 +73,3 @@ function breadcrumbList(&$out)
 }
 
 $wgHooks['BeforePageDisplay'][] = 'breadcrumbList';
-?>
